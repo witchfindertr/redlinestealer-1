@@ -1,4 +1,4 @@
-# redlinestealer
+# redline stealer v20.2 stub source code
 redline stub source code exported to vs project
 
 redline stealer v20.2 stub source code from crack
